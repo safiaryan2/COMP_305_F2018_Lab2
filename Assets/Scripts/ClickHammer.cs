@@ -32,16 +32,17 @@ public class ClickHammer : MonoBehaviour {
 
 	void OnMouseDown () {
 		// GameObject gObject = GameObject.Find ("Player");
-		if (sRend.sprite = firstImage) {
+		if (sRend.sprite == firstImage) {
 			
 			sRend.sprite = secondImage;
 		}
-		else 
-		{
-			sRend.sprite = firstImage;
-		}
+        else if (sRend.sprite == secondImage)
+        {
+            sRend.sprite = firstImage;
+        }
 
-
+        rBody.velocity *= -1;
+        
 
 
 		// Debug.Log (gObject.name);
